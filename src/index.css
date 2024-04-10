@@ -7,3 +7,18 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.playbutton {
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  scale: 0;
+  visibility: hidden;
+  transform-origin: center;
+  transition-property: scale visibility;
+  transition-duration: 200ms;
+}
+
+.card:hover .playbutton {
+  scale: 1;
+  visibility: visible;
+}
