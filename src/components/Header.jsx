@@ -3,6 +3,10 @@ import LinkItems from "./LinkItem";
 import { GoHome } from "react-icons/go";
 import { TbCategory } from "react-icons/tb";
 import { IoIosContact } from "react-icons/io";
+import { MdAddReaction } from "react-icons/md";
+import { AiFillInteraction } from "react-icons/ai";
+import { GrTransaction } from "react-icons/gr";
+import { VscReactions } from "react-icons/vsc";
 
 const link = [
   {
@@ -13,6 +17,24 @@ const link = [
   {
     icon: <TbCategory />,
     name: "Category",
+    child: [
+      {
+        icon: <MdAddReaction />,
+        name: "Action",
+      },
+      {
+        icon: <AiFillInteraction />,
+        name: "Adventure",
+      },
+      {
+        icon: <GrTransaction />,
+        name: "Si-Fi",
+      },
+      {
+        icon: <VscReactions />,
+        name: "Comedy",
+      },
+    ],
   },
 
   {
